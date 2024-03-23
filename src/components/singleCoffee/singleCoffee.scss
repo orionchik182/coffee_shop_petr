@@ -1,0 +1,65 @@
+.coffee {
+  &__header {
+    width: 1440px;
+    height: 260px;
+    background-image: url("../../resources/img/Mask\ Group.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 80px;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__text {
+        width: 420px;
+
+        &-desc {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.text__desc {
+  font-weight: bold;
+}
+
+.text__price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text__main,
+.text__price {
+  margin-left: 10px;
+  &-desc {
+		text-align: left;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  margin-right: 40px;
+}

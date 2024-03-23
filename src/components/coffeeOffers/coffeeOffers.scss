@@ -1,0 +1,22 @@
+.coffee__offers {
+  display: flex;
+  justify-content: center;
+	align-items: center;  
+	height: 645px;
+
+  &-goods {
+    display: flex;
+    height: 495px;
+    width: 805px;
+    flex-wrap: wrap;
+    gap: 70px;    
+
+    &-coffee {
+      width: 220px;
+      height: 240px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255);
+      box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

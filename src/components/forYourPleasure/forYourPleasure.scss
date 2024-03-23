@@ -1,0 +1,52 @@
+.coffee {
+  &__header {
+    width: 1440px;
+    height: 260px;
+    background-image: url("../../resources/img/Coffee_cup_blanket.jpeg");
+    background-size: cover;
+    background-position: center;    
+  }
+
+	&__main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__about {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 70px;
+		gap: 80px;
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&__text {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				gap: 20px;
+				width: 346px;
+				height: 232px;
+				margin-top: 25px;
+			}
+		}
+	}
+
+	&__line {
+		width: 240px;
+		margin-top: 56.5px;
+		border: 1px solid rgb(0, 0, 0);
+	}
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-top: 60px;
+	margin-right: 40px;
+}
