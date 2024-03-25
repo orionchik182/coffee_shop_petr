@@ -6,7 +6,7 @@ import AppNav from "../appNav/AppNav";
 const ForYourPleasure = () => {
 	return (
 		<>
-      <header className="coffee__header">
+      <header className="pleasure__header">
         <AppNav white />
         <h1>For your pleasure</h1>
       </header>

@@ -6,10 +6,13 @@ import AppLogoBean from "../appLogoBean/AppLogoBean";
 import img0 from "../../resources/coffee/1.jpeg";
 import img1 from "../../resources/coffee/2.jpeg";
 
+
 const SingleCoffee = (props) => {
 	const imgs = [img0, img1, imgCoffee];
 	const {id} = useParams();
+	
 	const data = Object.values(props.data.data).filter(item => item.id == id);
+	
 	const {name, country, price, desc} = data[0]
   return (
     <>
@@ -20,7 +23,7 @@ const SingleCoffee = (props) => {
       <main className="coffee__main">
         <div className="coffee__about">
           <div className="coffee__about__img">
-            <img src={imgs[id-1]} alt={name} />
+            {id > 3 ? <img src={imgCoffee} alt={name} /> : <img src={imgs[id-1]} alt={name} />}
           </div>
           <div className="coffee__about__info">
             <p className="text__title">About it</p>

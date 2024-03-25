@@ -2,11 +2,11 @@ import ForYourPleasure from "../forYourPleasure/ForYourPleasure";
 import AppFooter from "../appFooter/AppFooter";
 import CoffeeOffers from "../coffeeOffers/CoffeeOffers";
 
-const ForYourPleasurePage = () => {
+const ForYourPleasurePage = (props) => {
 	return (
 		<>
 			<ForYourPleasure />
-			<CoffeeOffers />
+			<CoffeeOffers data={props}/>
 			<AppFooter />
 		</>
 	)

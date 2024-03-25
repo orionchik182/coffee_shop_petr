@@ -1,8 +1,8 @@
 .coffee__offers {
   display: flex;
-  justify-content: center;
-	align-items: center;  
-	height: 645px;
+  justify-content: center;	  
+	height: 650px;
+	margin-top: 60px;
 
   &-goods {
     display: flex;
@@ -12,11 +12,24 @@
     gap: 70px;    
 
     &-coffee {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+			padding: 37px 10px 30px 10px;			
       width: 220px;
-      height: 240px;
+      height: 275px;
       border-radius: 8px;
       background: rgba(255, 255, 255);
       box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+
+			&-country, &-price {
+				margin-left: auto;
+			}
+
+			&-price {
+				font-weight: bold;
+			}
     }
   }
 }

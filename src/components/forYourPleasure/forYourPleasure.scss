@@ -1,11 +1,15 @@
-.coffee {
-  &__header {
+.pleasure {
+	&__header {
     width: 1440px;
     height: 260px;
     background-image: url("../../resources/img/Coffee_cup_blanket.jpeg");
     background-size: cover;
     background-position: center;    
   }
+}
+
+.coffee {
+  
 
 	&__main {
 		display: flex;

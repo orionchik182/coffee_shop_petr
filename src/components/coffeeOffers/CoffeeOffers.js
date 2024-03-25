@@ -1,18 +1,24 @@
-import './coffeeOffers.scss';
+import "./coffeeOffers.scss";
+import { useState, useEffect } from "react";
+import allCoffee from "../allCoffeeFunction/allCoffee";
+import img2 from "../../resources/coffee/3.jpeg";
 
-const CoffeeOffers = () => {
+const CoffeeOffers = (props) => {
+  const  [data, setData]  = useState([]);
+
+  const imgs = [img2, img2, img2, img2, img2, img2];
+  
+
+	useEffect(() => {
+		setData(data => allCoffee(props.data.data, imgs, "coffee", props.findCountry, props.findInput));
+	}, [props.findInput, props.findCountry])	
+	
+
   return (
-    <section className="coffee__offers">        
-        <div className="coffee__offers-goods">
-            <div className="coffee__offers-goods-coffee">1</div>
-            <div className="coffee__offers-goods-coffee">2</div>
-            <div className="coffee__offers-goods-coffee">3</div>
-            <div className="coffee__offers-goods-coffee">4</div>
-            <div className="coffee__offers-goods-coffee">5</div>
-            <div className="coffee__offers-goods-coffee">6</div>
-        </div>
+    <section className="coffee__offers">
+      <div className="coffee__offers-goods">{data}</div>
     </section>
-  )
-}
+  );
+};
 
 export default CoffeeOffers;

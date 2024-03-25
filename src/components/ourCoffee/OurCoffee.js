@@ -3,7 +3,9 @@ import "../ourCoffee/ourCoffee.scss";
 import imgGirl from "../../resources/img/girl-865304_1920.jpg";
 import AppLogoBean from "../appLogoBean/AppLogoBean";
 
+
 const OurCoffee = () => {
+	
   return (
     <>
       <header className="coffee__header">
@@ -40,4 +42,3 @@ const OurCoffee = () => {
 };
 
 export default OurCoffee;
- 
